@@ -47,7 +47,7 @@ definition = "tp.date.now(format: string = \"YYYY-MM-DD\", offset?: number⎮str
 
 [[tp.date.functions.now.args]]
 name = "format"
-description = """The format for the date. Defaults to `"YYYY-MM-DD"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/)."""
+description = """The format for the date. Defaults to `"YYYY-MM-DD"`. Refer to the [Momentjs format reference](https://momentjs.com/docs/#/displaying/format/)."""
 
 [[tp.date.functions.now.args]]
 name = "offset"
@@ -55,11 +55,11 @@ description = "Duration to offset the date from. If a number is provided, durati
 
 [[tp.date.functions.now.args]]
 name = "reference"
-description = "The date referential, e.g. set this to the note's title."
+description = "The date to use instead of today's date, e.g. set this to the note's title."
 
 [[tp.date.functions.now.args]]
 name = "reference_format"
-description = "The format for the reference date. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/)."
+description = "The format for the reference date. Refer to the [Momentjs format reference](https://momentjs.com/docs/#/displaying/format/)."
 
 [[tp.date.functions.now.examples]]
 name = "Date now"
@@ -100,7 +100,7 @@ definition = "tp.date.tomorrow(format: string = \"YYYY-MM-DD\")"
 
 [[tp.date.functions.tomorrow.args]]
 name = "format"
-description = """The format for the date. Defaults to `"YYYY-MM-DD"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/)."""
+description = """The format for the date. Defaults to `"YYYY-MM-DD"`. Refer to the [Momentjs format reference](https://momentjs.com/docs/#/displaying/format/)."""
 
 [[tp.date.functions.tomorrow.examples]]
 name = "Date tomorrow"
@@ -117,7 +117,7 @@ definition = "tp.date.yesterday(format: string = \"YYYY-MM-DD\")"
 
 [[tp.date.functions.yesterday.args]]
 name = "format"
-description = """The format for the date. Defaults to `"YYYY-MM-DD"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/)."""
+description = """The format for the date. Defaults to `"YYYY-MM-DD"`. Refer to the [Momentjs format reference](https://momentjs.com/docs/#/displaying/format/)."""
 
 [[tp.date.functions.yesterday.examples]]
 name = "Date yesterday"
@@ -134,7 +134,7 @@ definition = "tp.date.weekday(format: string = \"YYYY-MM-DD\", weekday: number, 
 
 [[tp.date.functions.weekday.args]]
 name = "format"
-description = """The format for the date. Defaults to `"YYYY-MM-DD"`. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/)."""
+description = """The format for the date. Defaults to `"YYYY-MM-DD"`. Refer to the [Momentjs format reference](https://momentjs.com/docs/#/displaying/format/)."""
 
 [[tp.date.functions.weekday.args]]
 name = "weekday"
@@ -142,11 +142,11 @@ description = "Week day number. If the locale assigns Monday as the first day of
 
 [[tp.date.functions.weekday.args]]
 name = "reference"
-description = "The date referential, e.g. set this to the note's title."
+description = "The reference date to use instead of today, e.g. set this to the note's title."
 
 [[tp.date.functions.weekday.args]]
 name = "reference_format"
-description = "The format for the reference date. Refer to [format reference](https://momentjs.com/docs/#/displaying/format/)."
+description = "The format for the reference date. Refer to the [Momentjs format reference](https://momentjs.com/docs/#/displaying/format/)."
 
 [[tp.date.functions.weekday.examples]]
 name = "This week's Monday"
