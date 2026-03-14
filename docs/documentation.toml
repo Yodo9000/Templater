@@ -193,7 +193,7 @@ example = "<% tp.file.content %>"
 [tp.file.functions.create_new]
 name = "create_new"
 description = "Creates a new file using a specified template or with a specified content."
-definition = "tp.file.create_new(template: TFile | string, filename: string = "Untitled", open_new: boolean = false, folder?: TFolder | string)"
+definition = "tp.file.create_new(template: TFile | string, filename: string = 'Untitled', open_new: boolean = false, folder?: TFolder | string)"
 
 [[tp.file.functions.create_new.args]]
 name = "template"
