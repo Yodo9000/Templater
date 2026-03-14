@@ -8,7 +8,7 @@ Keep in mind that only pertinent submissions will be accepted, don't submit a ve
 
 ## Layout
 
-Internal variables / functions are sorted by modules. Each module has a dedicated folder under [src/InternalTemplates](https://github.com/SilentVoid13/Templater/tree/master/src/InternalTemplates). 
+Internal variables / functions are sorted by modules. Each module has a dedicated folder under [src/core/functions/internal_functions](https://github.com/SilentVoid13/Templater/tree/master/src/core/functions/internal_functions). 
 
 Let's take the [date module](https://github.com/SilentVoid13/Templater/tree/master/src/InternalTemplates/date) as an example.
 
@@ -71,7 +71,7 @@ All generation methods are ordered by alphabetical order based on the internal v
 
 Try to give a good, self-explanatory name for your variable / function.
 
-**2nd step:** Register your internal variable / function in the `static_templates` or `dynamic_templates` map depending on whether your internal variable / function on the file when executed. The registration happens either in `createStaticTemplates` or `updateTemplates`.
+**2nd step:** Register your internal variable / function in the `static_templates` or `dynamic_templates` map depending on whether your internal variable / function depends on the file it is executed in. The registration happens either in `createStaticTemplates` or `updateTemplates`.
 
 To register your variable / function, use your `this.generate_<internal_variable_or_function_name>()` method you defined earlier:
 
@@ -83,8 +83,8 @@ this.dynamic_templates.set(<internal_variable_or_function_name>, this.generate_<
 
 Internal variable / function registrations are also ordered by alphabetical order based on the variable / function name.
 
-**3rd step:** Add your internal variable / function documentation to Templater's [documentation](https://github.com/SilentVoid13/Templater/tree/master/docs/docs/internal-variables-functions/internal-modules).
+**3rd step:** Add your internal variable / function documentation to Templater's [documentation](https://github.com/SilentVoid13/Templater/blob/master/docs/documentation.toml).
 
-And you are done ! Thanks for contributing to [Templater](https://github.com/SilentVoid13/Templater) !
+And you are done! Thanks for contributing to [Templater](https://github.com/SilentVoid13/Templater)!
 
 Now, just submit a [pull request](https://github.com/SilentVoid13/Templater/pulls) on Github, I'll try to be as reactive as possible.
