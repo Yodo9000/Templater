@@ -193,7 +193,7 @@ example = "<% tp.file.content %>"
 [tp.file.functions.create_new]
 name = "create_new"
 description = "Creates a new file using a specified template or with a specified content."
-definition = "tp.file.create_new(template: TFile ⎮ string, filename?: string, open_new: boolean = false, folder?: TFolder | string)"
+definition = "tp.file.create_new(template: TFile | string, filename: string = "Untitled", open_new: boolean = false, folder?: TFolder | string)"
 
 [[tp.file.functions.create_new.args]]
 name = "template"
@@ -241,7 +241,7 @@ example = """[[<% (await tp.file.create_new("MyFileContent", "MyFilename")).base
 
 [tp.file.functions.creation_date]
 name = "creation_date"
-description = "Retrieves the file's creation date."
+description = "Retrieves the current file's creation date."
 definition = "tp.file.creation_date(format: string = \"YYYY-MM-DD HH:mm\")"
 
 [[tp.file.functions.creation_date.args]]
@@ -343,7 +343,7 @@ example = "<% tp.file.folder(true) %>"
 [tp.file.functions.include]
 name = "include"
 description = "Includes the file's link content. Templates in the included content will be resolved."
-definition = "tp.file.include(include_link: string ⎮ TFile)"
+definition = "tp.file.include(include_link: string | TFile)"
 
 [[tp.file.functions.include.args]]
 name = "include_link"
